@@ -1,0 +1,7 @@
+{
+    "env":{
+        "MONGO_USER": "kumar360",
+        "MONGO_PASSWORD": "12345_",
+        "MONGO_DEFAULT_DATABASE": "shop"
+    }
+}
