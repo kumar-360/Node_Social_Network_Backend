@@ -55,7 +55,8 @@ app.use((err, req, res, next) => {
     });
 });
 
-mongoose.connect("mongodb+srv://kumar360:12345_@cluster0.be42z.mongodb.net/social-media?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://kumar360:12345_@cluster0.be42z.mongodb.net/social-media?retryWrites=true&w=majority",
+    { useFindAndModify: false, useNewUrlParser: true, useUnifiedTopology: true })
     .then(result => {
         console.log("Connected to MongoDB");
         app.listen(8080, () => console.log("Started listening on port 8080"));
