@@ -26,7 +26,7 @@ const fileFilter = (req, file, cb) => {
     else {
         cb(null, false);
     }
-};
+}; 
 
 app.use(express.json());
 app.use(multer({ storage: fileStorage, fileFilter: fileFilter }).single("image"));
